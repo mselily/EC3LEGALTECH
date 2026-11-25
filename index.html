@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormalizaLex: Tu negocio en Regla</title>
+    <link rel="icon" type="image/svg+xml" href="logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="salto-contenido" href="#diagnostico">Saltar al contenido</a>
+
+    <nav class="barra-nav" aria-label="Secciones de la página">
+      <div class="barra-nav-interna">
+        <a class="nav-marca" href="#inicio">
+          <img class="nav-logo" src="logo.jpg" alt="" width="40" height="40" />
+          <span>FormalizaLex</span>
+        </a>
+        <ul class="nav-enlaces">
+          <li><a href="#diagnostico">Diagnóstico General</a></li>
+          <li><a href="#simulador">Cálculo de espera</a></li>
+          <li><a href="#tareas">Tareas</a></li>
+          <li><a href="#bitacora">Bitácora</a></li>
+          <li><a href="#plan">Plan para productor</a></li>
+          <li><a href="#lexi">Lexi</a></li>
+          <li><a href="#nosotros">Sobre nosotros</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="encabezado" id="inicio">
+      <div class="contenedor-ancho hero">
+        <div class="hero-texto">
+          <p class="etiqueta">Tu control diario de cumplimiento y formalización</p>
+          <h1>FormalizaLex: Tu negocio en regla</h1>
+          <p class="subtitulo">
+            Herramienta práctica y en palabras simples para productores, talleres, asociaciones y mypes (pesca
+            artesanal, agroindustria, manufactura, minería en formalización y otros rubros).
+          </p>
+          <a class="boton-hero" href="#diagnostico">Empezar mi diagnóstico →</a>
+          <ul class="chips-hero">
+            <li>🐟 Pesca</li>
+            <li>🌾 Agroindustria</li>
+            <li>🏭 Manufactura</li>
+            <li>⛏️ Minería</li>
+          </ul>
+        </div>
+        <!-- FOTO 1: imagen principal. Guárdala como img/hero.jpg -->
+        <figure class="banner-foto">
+          <img src="banner.jpg" alt="Productores trabajando en su taller" onerror="this.parentElement.classList.add('sin-foto')" />
+        </figure>
+      </div>
+    </header>
+
+    <main class="contenedor-ancho">
+      <!-- 1. DIAGNOSTICO Y MATRIZ DE REQUISITOS POR RUBRO -->
+      <section class="tarjeta" id="diagnostico">
+        <h2>1. Diagnóstico General y Requisitos de tu Rubro</h2>
+
+        <div class="fila-columnas">
+          <div class="columna">
+            <label for="prod-nombre">Nombre de tu negocio, taller o asociación</label>
+            <input id="prod-nombre" type="text" placeholder="Ej. Asociación Pescadores / Taller El Sol" />
+
+            <label for="prod-rubro">¿A qué rubro te dedicas?</label>
+            <select id="prod-rubro">
+              <option value="Pesca artesanal">Pesca artesanal</option>
+              <option value="Agroindustria">Agroindustria</option>
+              <option value="Manufactura">Manufactura</option>
+              <option value="Minería en formalización">Minería en formalización</option>
+              <option value="Otro rubro productivo">Otro rubro productivo</option>
+            </select>
+
+            <label for="prod-dias-plazo">Días que faltan para tu fecha o trámite más próximo</label>
+            <input id="prod-dias-plazo" type="number" value="7" />
+
+            <label for="prod-tiene-instrumento">¿Qué tan claro tienes hoy qué te toca cumplir?</label>
+            <select id="prod-tiene-instrumento">
+              <option value="si">Tengo claro qué me toca y avanzo al día</option>
+              <option value="parcial">Tengo dudas en algún requisito o fecha</option>
+              <option value="no">No tengo claro qué me toca o ya se venció un plazo</option>
+            </select>
+
+            <button id="btn-evaluar-productor" type="button">Calcular mi semáforo</button>
+          </div>
+
+          <div class="columna">
+            <div class="resumen-metricas">
+              <div class="anillo" id="anillo-avance" style="--pct: 0">
+                <span id="anillo-texto">0%</span>
+              </div>
+              <div>
+                <p><strong>Avance de requisitos al día:</strong> <span id="porcentaje-avance">0%</span></p>
+                <p><strong>Requisitos críticos pendientes:</strong> <span id="criticos-pendientes">0</span></p>
+              </div>
+            </div>
+
+            <div id="semaforo-productor" class="aviso-estado">
+              Completa tus datos o actualiza tus requisitos para ver tu estado.
+            </div>
+            <p id="explicacion-productor"></p>
+          </div>
+        </div>
+
+
+        <h3><span id="icono-rubro" class="icono-rubro">🐟</span> Lista base de tu rubro (cambia el estado de cada punto)</h3>
+        <div id="contenedor-requisitos"></div>
+      </section>
+
+      <!-- 2. SIMULADOR DE ESCENARIOS DE RETRASO VS PRESUPUESTO -->
+      <section class="tarjeta" id="simulador">
+        <h2>2. ¿Cuánto Cuesta Esperar vs. Ponerme al Día?</h2>
+        <p class="texto-ayuda">
+          Compara cuánto te costaría postergar a <strong>7, 15 y 30 días</strong> frente a lo que planeas invertir para
+          cumplir a tiempo.
+        </p>
+
+        <div class="fila-columnas">
+          <div class="columna">
+            <label for="calc-monto-dia">Costo / pérdida estimada por día de retraso (S/)</label>
+            <input id="calc-monto-dia" type="number" value="25" />
+
+            <label for="calc-presupuesto">Presupuesto estimado para ponerte al día (S/)</label>
+            <input id="calc-presupuesto" type="number" value="450" />
+
+            <button id="btn-calcular-riesgo" type="button">Simular 7, 15 y 30 días</button>
+          </div>
+
+          <div class="columna">
+            <table class="tabla-datos">
+              <thead>
+                <tr>
+                  <th>Escenario</th>
+                  <th>Costo por retraso</th>
+                  <th>Diferencia vs. presupuesto</th>
+                </tr>
+              </thead>
+              <tbody id="cuerpo-escenarios"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TAREAS PENDIENTES Y BITACORA DE AVANCES -->
+      <section class="tarjeta" id="tareas">
+        <div class="fila-columnas">
+          <div class="columna">
+            <h2>3. Mis Tareas Pendientes</h2>
+            <div class="fila-agregar">
+              <input
+                id="input-obligacion"
+                type="text"
+                placeholder="Ej. Sacar copia del cargo o consultar fecha de pago"
+              />
+              <button id="btn-agregar-obligacion" type="button">Agregar</button>
+            </div>
+            <p id="aviso-obligacion" class="texto-aviso"></p>
+            <ul id="lista-obligaciones"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="tarjeta" id="bitacora">
+        <div class="fila-columnas">
+          <div class="columna">
+            <h2>4. Bitácora de Avances</h2>
+            <div class="fila-agregar">
+              <input
+                id="input-bitacora"
+                type="text"
+                placeholder="Ej. Hoy presenté documento o revisé el plazo"
+              />
+              <button id="btn-agregar-bitacora" type="button" class="boton-secundario">Registrar</button>
+            </div>
+            <p id="aviso-bitacora" class="texto-aviso"></p>
+            <ul id="lista-bitacora"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. PLAN MYPE Y VIGENCIA -->
+      <section class="tarjeta" id="plan">
+        <h2>5. Plan para Productor / Mype</h2>
+        <div class="fila-columnas">
+          <div class="columna">
+            <label for="sub-perfil">Modalidad del plan</label>
+            <select id="sub-perfil">
+              <option value="pyme_mensual">Mensual Mype (S/ 80 por mes)</option>
+              <option value="pyme_anual">Anual Mype (S/ 800 al año — ahorras S/ 160)</option>
+            </select>
+
+            <label for="sub-meses">Cantidad de meses (si elegiste mensual)</label>
+            <input id="sub-meses" type="number" value="3" />
+
+            <label for="sub-dias-restantes">Días restantes de tu suscripción actual</label>
+            <input id="sub-dias-restantes" type="number" value="18" />
+
+            <button id="btn-calcular-sub" type="button">Calcular plan y vigencia</button>
+          </div>
+
+          <div class="columna">
+            <p id="sub-monto-total"><strong>Monto del plan:</strong> S/ 240</p>
+            <p id="sub-ahorro"><strong>Detalle:</strong> 3 meses a S/ 80 cada uno.</p>
+            <p id="sub-vigencia"><strong>Vigencia:</strong> Activa — te quedan 18 día(s).</p>
+
+            <label for="sub-correo">Correo para recibir recordatorios</label>
+            <input id="sub-correo" type="email" placeholder="tunegocio@correo.com" />
+            <button id="btn-validar-sub" type="button" class="boton-secundario">Guardar correo de aviso</button>
+            <p id="sub-confirmacion"></p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 6. LEXI: ASISTENTE -->
+      <section class="tarjeta seccion-ia" id="lexi">
+        <h2>6. Lexi: tu asistente IA</h2>
+
+        <div class="ia-intro">
+          <div class="ia-avatar" aria-hidden="true">Lx</div>
+          <div class="ia-intro-texto">
+            <p class="ia-saludo">
+              Hola, soy Lexi, tu asistente IA, y te recomiendo lo siguiente para
+              <strong id="ia-empresa">tu negocio</strong>:
+            </p>
+            <ul id="ia-recomendaciones" class="ia-recomendaciones"></ul>
+            <div id="ia-estado" class="ia-estado" aria-label="Resumen de tu diagnóstico"></div>
+          </div>
+        </div>
+
+        <div class="ia-chat">
+          <div id="ia-mensajes" class="ia-mensajes" role="log" aria-live="polite" aria-label="Conversación con Lexi"></div>
+
+          <div id="ia-sugerencias" class="ia-sugerencias">
+            <button type="button" class="ia-chip" data-ia="analizar">📊 Analizar mi diagnóstico</button>
+            <button type="button" class="ia-chip" data-ia="primero">🚦 ¿Qué hago primero?</button>
+            <button type="button" class="ia-chip" data-ia="baselegal">⚖️ Entender la base legal</button>
+            <button type="button" class="ia-chip" data-ia="entidades">🏛️ ¿A qué entidades acudo?</button>
+            <button type="button" class="ia-chip" data-ia="plazos">📅 Plazos</button>
+          </div>
+
+          <form id="ia-form" class="ia-form" autocomplete="off">
+            <label for="ia-entrada" class="ia-etiqueta-oculta">Escribe tu pregunta para Lexi</label>
+            <input id="ia-entrada" type="text" placeholder="Ej. Explícame la licencia municipal o ¿qué es REINFO?" />
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+
+        <p class="texto-ayuda ia-aviso">
+          Lexi responde con los datos de tu diagnóstico y la base normativa cargada en esta página. Es una guía
+          orientativa: no reemplaza a un abogado ni a los trámites oficiales.
+        </p>
+      </section>
+
+      <!-- 7. SOBRE NOSOTROS -->
+      <section class="tarjeta seccion-nosotros" id="nosotros">
+        <h2>Sobre nosotros</h2>
+       
+        <div class="grilla-personas">
+         
+          <article class="persona">
+            <div class="persona-foto" data-iniciales="AC">
+              <img src="integrante1.jpeg" alt="Foto del integrante 1" onerror="this.remove()" />
+            </div>
+            <h3>Anderson Alexander Chanca Flores</h3>
+            <p class="persona-desc">Estudiante de 6to ciclo de la carrera de Derecho.</p>
+            <p><a href="https://wa.me/51931236606" target="_blank" rel="noopener">+51 931 236 606</a></p>
+            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=chancafloresanderson1@gmail.com" target="_blank" rel="noopener">chancafloresanderson1@gmail.com</a></p>
+          </article>
+          
+          <article class="persona">
+            <div class="persona-foto" data-iniciales="N2">
+              <img src="integrante2.jpeg" alt="Foto del integrante 2" onerror="this.remove()" />
+            </div>
+            <h3>Karibeth Julissa Junco Vilca</h3>
+            <p class="persona-desc">Estudiante de 6to ciclo de la carrera de Derecho.</p>
+            <p><a href="https://wa.me/51913725205" target="_blank" rel="noopener">+51 913 725 205</a></p>
+            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=karibethjunco6@gmail.com" target="_blank" rel="noopener">karibethjunco6@gmail.com</a></p>
+          </article>
+          
+          <article class="persona">
+            <div class="persona-foto" data-iniciales="N3">
+              <img src="integrante3.jpeg" alt="Foto del integrante 3" onerror="this.remove()" />
+            </div>
+            <h3>Bada Francesca Lee Grande</h3>
+            <p class="persona-desc">Estudiante de 9no ciclo de la carrera de Derecho.</p>
+            <p><a href="https://wa.me/51976072285" target="_blank" rel="noopener">+51 976 072 285</a></p>
+            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=Badalee2002@hotmail.com" target="_blank" rel="noopener">Badalee2002@hotmail.com</a></p>
+          </article>
+          
+          <article class="persona">
+            <div class="persona-foto" data-iniciales="N4">
+              <img src="integrante4.jpeg" alt="Foto del integrante 4" onerror="this.remove()" />
+            </div>
+            <h3>Maria Isabel Leonor Santiani Evangelista</h3>
+            <p class="persona-desc">Estudiante de 6to ciclo de la carrera de Derecho.</p>
+            <p><a href="https://wa.me/51952322082" target="_blank" rel="noopener">+51 952 322 082</a></p>
+            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=milsantianie@gmail.com" target="_blank" rel="noopener">milsantianie@gmail.com</a></p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="tarjeta nota-control">
+        <p>
+          <strong>Nota sencilla:</strong> Esta herramienta organiza tus pendientes, calcula escenarios con números fijos
+          y te ayuda a prevenir descuidos en palabras claras. No reemplaza la orientación de un abogado ni trámites
+          oficiales.
+        </p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

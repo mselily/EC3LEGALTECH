@@ -1,0 +1,186 @@
+{
+  "Pesca artesanal": [
+    {
+      "id": "PA-1",
+      "nombre": "Permiso de pesca artesanal y matrícula vigente",
+      "critico": true,
+      "glosario": "Verifica que la embarcación cuente con matrícula y permiso de pesca artesanal vigente otorgado por la autoridad pesquera competente.",
+      "baseLegal": "Decreto Ley 25977, art. 43; D.S. 012-2001-PE, art. 28",
+      "entidad": "PRODUCE y gobiernos regionales (DIREPRO / GEREPRO), según competencia",
+      "aplicabilidad": "Pescadores artesanales y armadores de embarcaciones pesqueras artesanales.",
+      "plazo": "Antes de iniciar faenas de extracción y mantenerlo vigente durante la operación.",
+      "fuente": "https://www.gob.pe/produce"
+    },
+    {
+      "id": "PA-2",
+      "nombre": "Respeto de vedas, tallas mínimas y zonas protegidas",
+      "critico": true,
+      "glosario": "Hay épocas en las que está prohibido extraer ciertas especies o tamaños para permitir su reproducción. Revisa siempre los comunicados oficiales antes de salir a faena.",
+      "baseLegal": "Decreto Ley 25977, art. 76 numerales 2 y 3",
+      "entidad": "PRODUCE y gobiernos regionales, según competencia",
+      "aplicabilidad": "Extracción de recursos hidrobiológicos; cumplimiento obligatorio de vedas y tallas mínimas.",
+      "plazo": "En cada faena; consultar las disposiciones específicas antes de zarpar.",
+      "fuente": "https://diariooficial.elperuano.pe/Normas"
+    },
+    {
+      "id": "PA-3",
+      "nombre": "Manipulación sanitaria de la captura a bordo",
+      "critico": true,
+      "glosario": "Mantén el pescado o marisco limpio, protegido del sol y con hielo o refrigeración adecuada desde la captura hasta el desembarque.",
+      "baseLegal": "D.S. 040-2001-PE, Norma Sanitaria para las Actividades Pesqueras y Acuícolas",
+      "entidad": "SANIPES (Autoridad Nacional de Sanidad e Inocuidad en Pesca y Acuicultura)",
+      "aplicabilidad": "Embarcaciones artesanales, desembarcaderos y transporte primario de recursos hidrobiológicos.",
+      "plazo": "Permanente durante todas las operaciones de captura, estiba y descarga.",
+      "fuente": "https://www.gob.pe/sanipes"
+    }
+  ],
+  "Agroindustria": [
+    {
+      "id": "AG-1",
+      "nombre": "Registro Sanitario de Alimentos y Bebidas",
+      "critico": true,
+      "glosario": "Todo alimento o bebida procesada industrialmente que se venda envasado al público debe contar con Registro Sanitario vigente antes de su comercialización.",
+      "baseLegal": "D.S. 007-98-SA, arts. 101 y 102",
+      "entidad": "DIGESA (o autoridad regional de salud con funciones transferidas)",
+      "aplicabilidad": "MYPES agroindustriales que elaboran, envasan y comercializan alimentos o bebidas procesadas.",
+      "plazo": "Antes de comercializar el producto; vigencia de 5 años renovable.",
+      "fuente": "https://www.digesa.minsa.gob.pe/normaslegales/normas/ds007_98.pdf"
+    },
+    {
+      "id": "AG-2",
+      "nombre": "Principios Generales de Higiene (PGH) / BPM y POES",
+      "critico": true,
+      "glosario": "Aplica buenas prácticas de manufactura y limpieza documentada en tu planta o taller para evitar contaminación física, química o biológica.",
+      "baseLegal": "D.S. 007-98-SA; R.M. 449-2006/MINSA",
+      "entidad": "DIGESA / DIRESA o GERESA competente",
+      "aplicabilidad": "Establecimientos de procesamiento primario o transformación agroindustrial de alimentos.",
+      "plazo": "Implementación continua y verificación periódica en planta.",
+      "fuente": "https://www.digesa.minsa.gob.pe/normaslegales/normas/ds007_98.pdf"
+    },
+    {
+      "id": "AG-3",
+      "nombre": "Control de calidad sanitaria del agua en procesos e higiene",
+      "critico": true,
+      "glosario": "El agua utilizada en el lavado, elaboración o limpieza de equipos debe ser potable y contar con control periódico de cloro residual y análisis microbiológico.",
+      "baseLegal": "D.S. 007-98-SA, art. 40",
+      "entidad": "Autoridad sanitaria competente (DIGESA o autoridad regional, según competencia)",
+      "aplicabilidad": "Fabricación de alimentos y bebidas del perfil seleccionado que utiliza agua en sus procesos o en operaciones de higiene.",
+      "plazo": "Durante la fabricación y según el programa de control sanitario.",
+      "fuente": "https://www.digesa.minsa.gob.pe/normaslegales/normas/ds007_98.pdf"
+    }
+  ],
+  "Manufactura": [
+    {
+      "id": "MF-1",
+      "nombre": "Licencia municipal de funcionamiento e ITSE",
+      "critico": true,
+      "glosario": "Antes de abrir el taller o planta, verifica la licencia municipal y las condiciones de seguridad del establecimiento. La inspección de seguridad puede ser previa o posterior según el nivel de riesgo.",
+      "baseLegal": "TUO de la Ley 28976, aprobado por D.S. 163-2020-PCM, arts. 3, 4, 5, 6 y 8; D.S. 002-2018-PCM, arts. 31, 33 y 34",
+      "entidad": "Municipalidad distrital o provincial competente",
+      "aplicabilidad": "Personas naturales o jurídicas que desarrollan actividad industrial en un establecimiento permanente; la municipalidad evalúa zonificación, compatibilidad de uso y seguridad.",
+      "plazo": "Antes de abrir el establecimiento. ITSE previa para riesgo alto o muy alto; posterior para riesgo bajo o medio, conforme a la clasificación municipal.",
+      "fuente": "https://busquedas.elperuano.pe/dispositivo/NL/1890266-2"
+    },
+    {
+      "id": "MF-2",
+      "nombre": "Instrumento de Gestión Ambiental correspondiente",
+      "critico": true,
+      "glosario": "Identifica qué instrumento ambiental corresponde a tu actividad y cumple sus compromisos. No todas las fábricas necesitan el mismo instrumento: depende de la actividad, categoría e impactos.",
+      "baseLegal": "D.S. 017-2015-PRODUCE, arts. 16 y 19, modificado por D.S. 006-2019-PRODUCE; D.S. 020-2025-PRODUCE, arts. 1, 2.1 y 2.5; Ley 27446, art. 3",
+      "entidad": "PRODUCE (Dirección General de Asuntos Ambientales de Industria) o gobierno regional con funciones transferidas; fiscalización por OEFA/EFA según competencia",
+      "aplicabilidad": "Proyectos manufactureros sujetos al SEIA y actividades en curso comprendidas en el reglamento sectorial. La DAA o el PAMA por adecuación excepcional del D.S. 020-2025-PRODUCE solo alcanza a actividades que iniciaron hasta el 27/06/2019 sin IGA aprobado y cumplen las condiciones normativas.",
+      "plazo": "El instrumento preventivo debe obtenerse antes de iniciar el proyecto sujeto al SEIA. Para los supuestos excepcionales del D.S. 020-2025-PRODUCE, el plazo máximo para presentar DAA o PAMA es de cinco años desde la entrada en vigor de esa norma.",
+      "fuente": "https://busquedas.elperuano.pe/dispositivo/NL/2445312-1"
+    },
+    {
+      "id": "MF-3",
+      "nombre": "Evaluación de riesgos laborales y equipos de protección",
+      "critico": true,
+      "glosario": "Identifica los peligros de máquinas, herramientas, sustancias y procesos; actualiza la evaluación de riesgos y entrega gratuitamente los equipos de protección adecuados cuando correspondan.",
+      "baseLegal": "Ley 29783, arts. 49, 57 y 60 (arts. 49 y 60 modificados por Ley 31246); D.S. 005-2012-TR",
+      "entidad": "SUNAFIL y autoridad de trabajo competente",
+      "aplicabilidad": "Empleadores manufactureros con trabajadores; deben prevenir riesgos según las tareas y condiciones reales del centro de trabajo.",
+      "plazo": "La evaluación de riesgos se actualiza como mínimo una vez al año, cuando cambian las condiciones de trabajo o cuando se producen daños a la salud o seguridad; los EPP se proporcionan cuando el riesgo no puede eliminarse en su origen.",
+      "fuente": "https://www.dirislimaeste.gob.pe/Virtual2/Otros_Link/CSST/Ley%2029783%20Seguridad%20y%20Salud%20en%20el%20Trabajo.pdf"
+    },
+    {
+      "id": "MF-4",
+      "nombre": "Manejo de residuos sólidos no municipales y reportes SIGERSOL",
+      "critico": true,
+      "glosario": "Separa, almacena y entrega los residuos industriales de forma adecuada. Si tu actividad está obligada a contar con IGA, verifica además los reportes que correspondan en SIGERSOL.",
+      "baseLegal": "D. Leg. 1278, art. 55; D.S. 014-2017-MINAM, arts. 13 y 48; R.M. 000279-2025-PRODUCE, arts. 1 y 3-1.4",
+      "entidad": "MINAM (administración de SIGERSOL); PRODUCE/DGAAMI para las reglas sectoriales; OEFA o EFA competente para fiscalización, según corresponda",
+      "aplicabilidad": "Generadores de residuos sólidos no municipales. Si cuentan con IGA, revisar la obligación de reporte conforme al D.S. 014-2017-MINAM. Si no están obligados a IGA, la R.M. 000279-2025-PRODUCE (vigente desde 01/01/2026) exige DAMRS/MMRSP solo a las actividades manufactureras CIIU enumeradas y cuando se cumplan las condiciones y umbrales específicos de su cuadro (por ejemplo, cantidades de residuos o material de descarte). Quienes no estén comprendidos igualmente deben cumplir las demás obligaciones de manejo de residuos.",
+      "plazo": "Cuando corresponda: DAMRS durante los primeros quince días hábiles de abril de cada año; manifiestos de residuos peligrosos durante los primeros quince días hábiles del inicio de cada trimestre. La gestión de residuos debe mantenerse de forma continua.",
+      "fuente": "https://busquedas.elperuano.pe/dispositivo/NL/2430741-1"
+    }
+  ],
+  "Minería en formalización": [
+    {
+      "id": "MN-1",
+      "nombre": "Inscripción vigente en REINFO y RUC activo",
+      "critico": true,
+      "glosario": "Verifica que tu inscripción en el REINFO figure vigente y que tu RUC esté activo, en renta de tercera categoría y con actividad económica minera. Estar inscrito no equivale a tener autorización de inicio o reinicio.",
+      "baseLegal": "D.S. 001-2020-EM, art. 7.2 literal a), modificado por D.S. 010-2022-EM; Ley 32537, art. único (modifica art. 6 del D. Leg. 1293)",
+      "entidad": "MINEM - Dirección General de Formalización Minera (REINFO); SUNAT (RUC)",
+      "aplicabilidad": "Solo para operadores inscritos en el REINFO dentro del proceso de formalización minera integral. La Ley 32537 también exige verificar el cumplimiento del sinceramiento georreferenciado de ubicación presentado por los inscritos.",
+      "plazo": "Mantener las condiciones durante la vigencia del proceso. La Ley 32537 fija vigencia hasta el 31/12/2026 o hasta la entrada en vigor de la Ley MAPE y su reglamento, lo que ocurra primero. Además, exigió el sinceramiento georreferenciado de ubicación dentro de 120 días desde su entrada en vigor; verificar el cargo porque ese plazo único ya transcurrió.",
+      "fuente": "https://busquedas.elperuano.pe/dispositivo/NL/2471915-1"
+    },
+    {
+      "id": "MN-2",
+      "nombre": "IGAFOM correctivo y preventivo",
+      "critico": true,
+      "glosario": "El IGAFOM describe las medidas para corregir impactos existentes y prevenir impactos de la actividad minera. Debes revisar que corresponda a cada actividad inscrita y conocer su estado de evaluación.",
+      "baseLegal": "D. Leg. 1336, art. 6; D.S. 038-2017-EM, arts. 4, 9 y 10; D.S. 001-2020-EM, art. 7.2 literal b), modificado por D.S. 010-2022-EM; D.S. 009-2025-EM, arts. 9.5 y disposición complementaria modificatoria primera",
+      "entidad": "MINEM - Dirección General de Asuntos Ambientales Mineros (evalúa y aprueba); gobiernos regionales y Dirección General de Minería en Lima Metropolitana (fiscalización ambiental, según competencia)",
+      "aplicabilidad": "Minero informal inscrito en REINFO, respecto de cada actividad minera inscrita. El IGAFOM es un requisito del proceso de formalización y su aprobación es necesaria para culminarlo.",
+      "plazo": "Presentar los aspectos correctivo y preventivo y atender las observaciones. Si hay desistimiento, abandono o desaprobación, revisar el plazo de treinta días calendario para una nueva presentación previsto en el art. 7.2 literal b), según corresponda.",
+      "fuente": "https://busquedas.elperuano.pe/dispositivo/NL/2400459-1"
+    },
+    {
+      "id": "MN-3",
+      "nombre": "Acreditación de concesión minera y uso del terreno superficial",
+      "critico": true,
+      "glosario": "Debes acreditar el derecho sobre la concesión minera y, por separado, la propiedad o autorización para usar el terreno superficial. Una concesión minera no reemplaza el derecho de uso de la superficie.",
+      "baseLegal": "D. Leg. 1336, art. 3; D.S. 018-2017-EM, arts. 18 y 20",
+      "entidad": "MINEM - Dirección General de Formalización Minera; SUNARP para verificar partidas registrales; titular del predio o de la concesión, según corresponda",
+      "aplicabilidad": "Operadores inscritos en el proceso que deben acreditar titularidad de la concesión o contrato de cesión/explotación y propiedad o autorización de uso del terreno superficial.",
+      "plazo": "Antes de solicitar la autorización de inicio o reinicio; los contratos y derechos deben estar vigentes y acreditados conforme a la norma.",
+      "fuente": "https://cdn.www.gob.pe/uploads/document/file/308242/D.S._N__018-2017-EM_-_Complementarias_en_el_marco_del_PFMI.pdf"
+    },
+    {
+      "id": "MN-4",
+      "nombre": "Expediente técnico y autorización de inicio o reinicio",
+      "critico": true,
+      "glosario": "Prepara el expediente técnico y los documentos arqueológicos que correspondan. No inicies ni reinicies explotación o beneficio solo por tener inscripción en REINFO: se requiere la autorización administrativa correspondiente.",
+      "baseLegal": "D.S. 018-2017-EM, arts. 29, 30, 31 y 32; D.S. 009-2025-EM, art. 9.3 literal c) y art. 9.5; D.S. 025-2026-EM, art. 2",
+      "entidad": "MINEM - Dirección General de Formalización Minera (trámite y verificación previa); otras autoridades sectoriales para documentos específicos",
+      "aplicabilidad": "Minero en proceso de formalización que solicita autorización de inicio o reinicio de explotación y/o beneficio. Incluye expediente técnico, declaración jurada de inexistencia de restos arqueológicos y demás requisitos aplicables.",
+      "plazo": "Antes de iniciar o reiniciar actividades. Desde el D.S. 025-2026-EM, la verificación previa del art. 32 se realiza en gabinete por la DGFM.",
+      "fuente": "https://busquedas.elperuano.pe/dispositivo/NL/2570415-1"
+    },
+    {
+      "id": "MN-5",
+      "nombre": "Declaración semestral de producción y registro de insumos fiscalizados",
+      "critico": true,
+      "glosario": "Presenta la declaración semestral de producción cuando te corresponda. Si realizas beneficio con insumos químicos fiscalizados, verifica también la inscripción en el registro de SUNAT.",
+      "baseLegal": "D.S. 001-2020-EM, art. 7.2 literales c) y d), modificado por D.S. 005-2022-EM y D.S. 010-2022-EM",
+      "entidad": "MINEM - Dirección General de Formalización Minera (declaración de producción); SUNAT (Registro para el Control de Bienes Fiscalizados)",
+      "aplicabilidad": "Mineros inscritos en REINFO por cada actividad declarada. La declaración semestral tiene una excepción para quien explota en una concesión vigente de la que es titular; el registro de bienes fiscalizados corresponde cuando se realiza beneficio con insumos sujetos a control.",
+      "plazo": "Declaración de producción: hasta el último día calendario de julio y enero, por los semestres anteriores, según el texto del art. 7.2(c) modificado por D.S. 010-2022-EM. Registro de bienes fiscalizados: antes de realizar la actividad sujeta a control.",
+      "fuente": "https://busquedas.elperuano.pe/dispositivo/NL/2102467-1"
+    },
+    {
+      "id": "MN-6",
+      "nombre": "Seguridad y salud ocupacional minera",
+      "critico": true,
+      "glosario": "Realiza inspecciones para identificar peligros y evaluar riesgos. Implementa estándares, procedimientos y prácticas seguras para las labores mineras, según el tipo de operación.",
+      "baseLegal": "D.S. 024-2016-EM, arts. 26 literal m) y 33, modificados por D.S. 034-2023-EM",
+      "entidad": "Gobierno regional competente para pequeña minería y minería artesanal; SUNAFIL en el ámbito laboral; OSINERGMIN para gran y mediana minería",
+      "aplicabilidad": "Titulares de actividades de pequeña minería y minería artesanal; las medidas concretas dependen de si la operación es subterránea, superficial, de explotación o beneficio.",
+      "plazo": "Obligación permanente durante las actividades; efectuar inspecciones, evaluar riesgos e implementar los controles, estándares y procedimientos que correspondan.",
+      "fuente": "https://busquedas.elperuano.pe/dispositivo/NL/2249422-2"
+    }
+  ]
+}
